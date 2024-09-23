@@ -1,0 +1,57 @@
+:root {
+  --background-color: #161618;
+  --text-color: #ffffff;
+  --primary-color: #E02049;
+  --shadow-color: #e02046;
+  --linear-color: #ff5479;
+  --linear-color-100: #c02141
+}
+
+html {
+  font-family: 'Onest', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+.image {
+  @apply h-full w-full select-none object-cover;
+}
+.title {
+  @apply text-2xl font-bold sm:text-4xl;
+}
+.cont {
+  @apply mx-auto box-content max-w-7xl px-5 md:px-10;
+}
+.disabled {
+  @apply pointer-events-none opacity-50;
+}
+.textfield {
+  @apply bg-dark-500 outline-none rounded-full w-full h-11 text-sm font-medium pl-4;
+}
+.textfield:focus {
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.p-timeline-event {
+  display: block !important;
+}
+.p-timeline-horizontal .p-timeline-event:last-child {
+  width: 35% !important;
+  flex: none !important;
+}
+.p-timeline-horizontal .p-timeline-event:first-child .p-timeline-event-separator {
+  background: linear-gradient(90deg, #E02049 0%, #A5203C 100%);
+}
+.p-timeline-horizontal .p-timeline-event:nth-child(2) .p-timeline-event-separator {
+  background: linear-gradient(90deg, #A5203C 0%, #67202F 100%);
+}
+.p-timeline-horizontal .p-timeline-event:last-child .p-timeline-event-separator {
+  background: linear-gradient(90deg, #67202F 0%, rgba(165, 32, 60, 0) 100%);
+}
+.p-timeline-event-marker::after {
+  width: 17px !important;
+  height: 17px !important;
+  background: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 9999px !important;
+}
