@@ -13,6 +13,7 @@
             {{ $t("howWork.card1.title2") }}
           </div>
           <button
+            @click="openLink"
             class="mt-6 flex items-center gap-1 py-2 px-3 hover:bg-[#00B0F266] active:bg-[#00B0F2] transition duration-300 xl:py-3 xl:px-4 rounded-full bg-blue-200"
             @mousedown="isActive = true"
             @mouseup="isActive = false"
@@ -98,6 +99,10 @@
 </template>
 <script setup lang="ts">
 const isActive = ref(false);
+
+const openLink = () => {
+  window.open("https://t.me/GetBonusGlobal_bot", "_blank");
+};
 </script>
 <style scoped>
 .double-ellipse-bg {
