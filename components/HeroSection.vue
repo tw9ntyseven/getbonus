@@ -17,6 +17,7 @@
       </div>
       <div class="mt-8 lg:mt-11 flex items-center gap-4">
         <button
+          @click="openTry"
           class="relative overflow-hidden rounded-full px-6 py-4 flex gap-2 items-center transition duration-300"
           @mouseenter="isHovered = true"
           @mouseleave="isHovered = false"
@@ -73,6 +74,10 @@
 <script setup lang="ts">
 const isHovered = ref(false);
 const isPressed = ref(false);
+
+const openTry = () => {
+  window.open("https://t.me/GetBonusGlobal_bot", "_blank");
+};
 </script>
 <style scoped>
 .button-primary-hover {

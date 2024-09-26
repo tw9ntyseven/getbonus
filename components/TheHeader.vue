@@ -4,21 +4,21 @@
   >
     <div class="bg-[#28282ACC] w-auto rounded-full px-5 h-full">
       <div class="flex h-full gap-2 lg:gap-5 items-center justify-between">
-        <a href="#hero">
+        <a href="/#hero">
           <NuxtImg src="/img/logo.svg" class="w-[124px]" />
         </a>
         <a
-          href="#how-work"
+          href="/#how-work"
           class="hidden hover:text-main hover:opacity-100 transition duration-200 text-sm md:block opacity-60 whitespace-nowrap"
           >{{ $t("header.howWork") }}</a
         >
         <a
-          href="#roadmap"
+          href="/#roadmap"
           class="hidden hover:text-main hover:opacity-100 transition duration-200 text-sm md:block opacity-60 whitespace-nowrap"
           >Roadmap</a
         >
         <a
-          href="#ads"
+          href="/#ads"
           class="hidden hover:text-main hover:opacity-100 transition duration-200 text-sm md:block opacity-60 whitespace-nowrap"
           >{{ $t("header.ads") }}</a
         >
@@ -35,7 +35,7 @@
         class="w-8 h-8"
       />
       <a
-        href="#ads"
+        href="/#ads"
         class="whitespace-nowrap text-sm"
         :class="[isActive ? 'text-white' : 'shine-text']"
       >

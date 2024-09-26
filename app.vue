@@ -1,7 +1,8 @@
 <template>
   <TheHeader @onShowModal="onShowMenu" />
   <main ref="main">
-    <div class="wrapper h-screen">
+    <NuxtPage />
+    <!-- <div class="wrapper h-screen">
       <div class="pt-24">
         <HeroSection />
         <HowWorkSection />
@@ -9,7 +10,7 @@
         <Roadmap />
         <TheFooter />
       </div>
-    </div>
+    </div> -->
   </main>
   <TheMenu
     :isModalVisible="isMenuVisible"
@@ -54,14 +55,4 @@ onMounted(() => {
   }
 });
 </script>
-<style scoped>
-.wrapper {
-  background-image: url("/img/bg-texture-2.png"), url("/img/sharp.png"),
-    url("/img/ellipse-1.png");
-  background-repeat: repeat, repeat, no-repeat;
-  background-size: 100%, 100%;
-}
-.ellipse {
-  background: #e02049cc;
-}
-</style>
+<style scoped></style>

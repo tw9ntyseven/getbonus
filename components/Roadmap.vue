@@ -70,49 +70,54 @@ const { locale } = useI18n();
 
 const eventsRu = ref([
   {
-    date: "Август",
-    content: [
-      { title: "Разработка квест-бота" },
-      { title: "Старт комьюнити" },
-      { title: "Выпуск квест бота" },
-    ],
-  },
-  {
     date: "Сентябрь",
     content: [
-      { title: "Разработка основной платформы" },
-      { title: "Запуск токена" },
+      { title: "Запуск комьюнити" },
+      { title: "Разработка квест-бота" },
+      { title: "Выпуск квест-бота" },
+      { title: "Разработка платформы GetBonus" },
     ],
   },
   {
     date: "Октябрь",
     content: [
-      { title: "Запуск основной платформы" },
-      { title: "Запуск на TON конференции" },
+      { title: "Выпуск MVP платформы GetBonus" },
+      { title: "Закрытое тестирование платформы" },
+    ],
+  },
+  {
+    date: "Ноябрь",
+    content: [
+      { title: "Выпуск платформы GetBonus в открытый доступ" },
+      { title: "Рекламная кампания, анонс партнеров" },
+      { title: "Запуск криптотокена платформы" },
     ],
   },
 ]);
+
 const eventsEn = ref([
-  {
-    date: "August",
-    content: [
-      { title: "Developing a quest bot" },
-      { title: "Community Launch" },
-      { title: "Release quest bot" },
-    ],
-  },
   {
     date: "September",
     content: [
-      { title: "Develop the core platform" },
-      { title: "Launch token" },
+      { title: "Community Launch" },
+      { title: "Quest bot development" },
+      { title: "Questbot Release" },
+      { title: "GetBonus Platform Development" },
     ],
   },
   {
     date: "October",
     content: [
-      { title: "Launch the core platform" },
-      { title: "Launch on TON conference" },
+      { title: "GetBonus Platform MVP Release" },
+      { title: "Closed Platform Testing" },
+    ],
+  },
+  {
+    date: "November",
+    content: [
+      { title: "GetBonus platform release to the public" },
+      { title: "Advertising Campaign, Partner Announcement" },
+      { title: "GetBonus platform crypto-token launch" },
     ],
   },
 ]);

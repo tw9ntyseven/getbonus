@@ -7,7 +7,7 @@
       <div class="flex w-full items-center justify-between gap-3.5 h-14 mt-8">
         <div class="bg-[#28282ACC] w-auto rounded-full px-5 h-full">
           <div class="flex h-full gap-5 items-center justify-between">
-            <a href="#hero" @click="closeModal">
+            <a href="/#hero" @click="closeModal">
               <NuxtImg src="/img/logo.svg" class="w-28" />
             </a>
           </div>
@@ -35,20 +35,24 @@
         <NuxtImg src="/icons/sms-edit-white.svg" class="h-8" />
       </div>
       <div class="flex flex-col gap-4">
-        <a href="#how-work" @click="closeModal" class="font-medium text-2xl">{{
+        <a href="/#how-work" @click="closeModal" class="font-medium text-2xl">{{
           $t("header.howWork")
         }}</a>
-        <a href="#roadmap" @click="closeModal" class="font-medium text-2xl"
+        <a href="/#roadmap" @click="closeModal" class="font-medium text-2xl"
           >Roadmap</a
         >
-        <a href="#ads" @click="closeModal" class="font-medium text-2xl">{{
+        <a href="/#ads" @click="closeModal" class="font-medium text-2xl">{{
           $t("header.ads")
         }}</a>
       </div>
       <div class="mt-11 flex items-center gap-3.5">
-        <NuxtLink class="bg-[#252527] px-6 py-3 rounded-full">
+        <a
+          href="https://x.com/getbonusglobal"
+          target="_blank"
+          class="bg-[#252527] px-6 py-3 rounded-full"
+        >
           <NuxtImg src="/icons/x.svg" class="w-6 h-6" />
-        </NuxtLink>
+        </a>
         <a
           href="https://t.me/getbonuseng"
           target="_blank"
